@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: medical-chatbot
+    runtime: php
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:$PORT -t public
+    envVars:
+      - key: PHP_VERSION
+        value: 8.2
